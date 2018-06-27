@@ -14,6 +14,7 @@ setup(name='devlog',
       author="Joonsang Jo",
       author_email="needoptimism@gmail.com",
       description="This is a personal devlog application",
+      url="https://github.com/flecho/devlog",
 
       # setup_requires=["a", "b"]
       # A string or list of strings specifying what other distributions need to be present in order for the setup script to run.
