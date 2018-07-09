@@ -45,8 +45,8 @@ def upload_file():
             make_uploads_dir(upload_path)
             file.save(os.path.join(upload_path, filename))
             logger.info('file_save is done')
-            return "hello"
-            #return redirect(url_for('upload.uploaded_file', filename=filename))
+            return "Completed!"
+#            return redirect(url_for('upload.uploaded_file', filename=filename))
         
     return '''<!doctype html>
     <title>Upload your markdown file</title>
