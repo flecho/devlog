@@ -5,7 +5,7 @@ from blueprints.upload import upload
 from blueprints.page import page
 
 
-def create_app():
+def create_app(settings_override=None):
     """
     Create a Flask application using the app factory pattern.
 
@@ -17,6 +17,10 @@ def create_app():
 
     app.config.from_object('config.settings')  # should use this function to load the default setting.
     app.config.from_pyfile('settings.py', silent=True)  # the default setting can be overriden by instance/settings.py
+
+    if settings_override:
+        app.config.update(settings_override)
+
     app.register_blueprint(upload)
     app.register_blueprint(page)
 
