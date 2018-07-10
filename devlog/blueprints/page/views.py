@@ -19,6 +19,10 @@ def get_markdown_file():
     # If you care about performance, it is better to re-use the Markdown instance
     import os
     file_path = os.path.join(current_app.instance_path, 'uploads', 'jinja2.md')
+    # whether file exists or not.
+    if not os.path.isfile(file_path):
+        return "No markdown file yet."
+    
     markdown = None
     renderer = mistune.Renderer(escape=True, hard_wrap=True)
     markdown = mistune.Markdown(renderer=renderer)

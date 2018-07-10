@@ -6,9 +6,14 @@
 
 <body>
     <h3>devlog made by Joonsang Jo</h3>
-    List of uploaded markdown is as follows: 
-    <br>
-    {{ markdown_file|safe }}
+    <nav>
+        <!-- Wanna set this menu dynamically by python variables. -->
+        <p>navigation</p>
+        <li>markdown</li>>
+    </nav>
+    <section>
+        {{ markdown_file|safe }}
+    </section>
 </body>
 
 </html>
