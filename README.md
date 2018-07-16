@@ -13,6 +13,7 @@ Basic plan
 <br>
 
 #### Things To Do
+- [ ] 0. Studying HTML & CSS is required.
 - [ ] 1. Solve flask logging that is not working
 - [ ] 2. Make upload_file parts as class
 - [x] 3. Make `.md` file is shown in main page.
@@ -20,4 +21,6 @@ Basic plan
 - [ ] 5. Add code coverage 
 - [ ] 6. Make a list of all `.md` files shown in the main page
 - [ ] 7. Split the layout
+- [ ] 8. Wanna-have feature: drag & drop upload
+
 
