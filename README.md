@@ -3,12 +3,11 @@
 
 <br>
 
-This is a simple blog that records my development log.
-(All logs are written in markdown.)
-This program will be written in python, and javascript.
+This is a simple blog that records the development log. (All the logs will be presumably written in markdown.)
+The program will be based on python3.6, and javascript.
 
-Basic plan
-: This project was designed to make personal blog that can present a markdown file nicely.
+#### Overview
+: This project was designed to make development blog that can present and format a markdown file nicely.
 
 <br>
 
@@ -24,3 +23,10 @@ Basic plan
 - [ ] 8. Wanna-have feature: drag & drop upload
 
 
+#### Set up environment 
+
+```
+make venv
+source venv/bin/activate
+make init
+```
