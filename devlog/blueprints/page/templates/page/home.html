@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <h1>{{ welcome_msg }}</h1>
-</head>
+{% extends "bootstrap/base.html" %}
 
-<body>
+{% block head %}
+{{super()}}
+    <h1>{{ welcome_msg }}</h1>
+{% endblock %}
+
+
+
+{% block body %}
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About me</a></li>
+        <li><a href="#">Posts</a></li>
+    </ul>
     <h3>devlog made by Joonsang Jo</h3>
     <nav>
         <!-- Wanna set this menu dynamically by python variables. -->
@@ -14,7 +22,4 @@
     <section>
         {{ markdown_file|safe }}
     </section>
-</body>
-
-</html>
-
+{% endblock %}

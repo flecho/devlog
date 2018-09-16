@@ -15,10 +15,11 @@ def get_markdown_files():
     """ I would like to view mark down languages."""
     pass
 
+
 def get_markdown_file():
     # If you care about performance, it is better to re-use the Markdown instance
     import os
-    file_path = os.path.join(current_app.instance_path, 'uploads', 'jinja2.md')
+    file_path = os.path.join(current_app.instance_path, 'uploads', 'hello.md')
     # whether file exists or not.
     if not os.path.isfile(file_path):
         return "No markdown file yet."
@@ -30,8 +31,10 @@ def get_markdown_file():
         result = markdown(f.read().decode('utf-8'))
     return result
 
+
 @page.route("/")
 def home():
     # return "Hello, World!"
+    welcome_msg = "Welcome to devlog!"
     markdown_file = get_markdown_file()
-    return render_template('page/home.html', welcome_msg="Hello, World!", markdown_file=markdown_file)
+    return render_template('page/home.html', welcome_msg=welcome_msg, markdown_file=markdown_file)

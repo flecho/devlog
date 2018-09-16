@@ -39,7 +39,7 @@ def upload_file():
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
-        if file and allowed_file(file.filename):            
+        if file and allowed_file(file.filename):
             logger.info('upload_path: ' + upload_path)
             filename = secure_filename(file.filename)
             make_uploads_dir(upload_path)

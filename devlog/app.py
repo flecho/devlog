@@ -1,8 +1,9 @@
 import os
-from flask import (Flask, flash, render_template,
-                   url_for)
+from flask import Flask
+from flask_bootstrap import Bootstrap
 from blueprints.upload import upload
 from blueprints.page import page
+from blueprints.about import about
 
 
 def create_app(settings_override=None):
@@ -12,6 +13,7 @@ def create_app(settings_override=None):
     :return: Flask app
     """
     app = Flask(__name__, instance_relative_config=True)
+    Bootstrap(app)
     # The behavior of relative paths in config files can be flipped between "relative to the application root" (the default)
     # to "relative to instance folder" via the instance_relative_config switch to the application constructor
 
@@ -22,9 +24,9 @@ def create_app(settings_override=None):
         app.config.update(settings_override)
 
     app.register_blueprint(upload)
+    app.register_blueprint(about)
     app.register_blueprint(page)
 
-    #with app.app_context():
     upload.path = os.path.join(app.instance_path, 'uploads')
 
     return app
