@@ -26,3 +26,12 @@ This blog will record all my personal noteworthy logs in markdown format.
 - [ ] 6. Make a list of all `.md` files shown in the main page
 - [ ] 7. Split the layout(There should be a fixed menu navigating tab, and content should be shown in layout )
 - [ ] 8. drag & drop upload feature
+
+
+#### Set up environment 
+
+```
+make venv
+source venv/bin/activate
+make init
+```
