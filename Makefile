@@ -1,6 +1,6 @@
 .PHONY: venv
 venv:
-	virtualenv --no-download -p python3.6 venv
+	virtualenv --no-download -p python3.7 venv
 
 .PHONY: init
 init:
