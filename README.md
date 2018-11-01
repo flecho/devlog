@@ -14,12 +14,7 @@ This blog will record all my personal noteworthy logs in markdown format.
 
 <br>
 
-<<<<<<< 9d9bc4972c6d4729a97000ad814678072819c439
-#### Things To Do (2018.09.23)
-=======
-
 #### Things To Do (2018.11.01)
->>>>>>> Let's use python3.7
 - [ ] 0. Check these libraries and use them.
     - [Flask-Blogging — Flask-Blogging 1.1.0 documentation](https://flask-blogging.readthedocs.io/en/latest/)
     - [Flask-Bootstrap — Flask-Bootstrap 3.3.7.1 documentation](https://pythonhosted.org/Flask-Bootstrap/index.html)
