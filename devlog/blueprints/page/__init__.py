@@ -1,1 +1,1 @@
-from views import page
+from .views import page

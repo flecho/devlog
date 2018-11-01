@@ -10,4 +10,5 @@ init:
 .PHONY: clean
 clean:
 	rm -rf venv
+	rm -rf instance
 

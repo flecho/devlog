@@ -1,9 +1,9 @@
 import os
 from flask import Flask
 from flask_bootstrap import Bootstrap
-from blueprints.upload import upload
-from blueprints.page import page
-from blueprints.about import about
+from .blueprints.upload import upload
+from .blueprints.page import page
+from .blueprints.about import about
 
 
 def create_app(settings_override=None):

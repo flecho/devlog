@@ -29,6 +29,7 @@ This blog will record all my personal noteworthy logs in markdown format.
 - [ ] 7. Split the layout(There should be a fixed menu navigating tab, and content should be shown in layout) (in progress)
 - [ ] 8. drag & drop upload feature
 - [x] 9. Update to python3.7
+- [x] 10. Relative import modification  
 
 
 #### Set up environment 
