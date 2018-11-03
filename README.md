@@ -14,23 +14,25 @@ This blog will record all my personal noteworthy logs in markdown format.
 
 <br>
 
-#### Things To Do (2018.11.01)
+#### Things To Do (2018.11.03)
 - [ ] 0. Check these libraries and use them.
     - [Flask-Blogging — Flask-Blogging 1.1.0 documentation](https://flask-blogging.readthedocs.io/en/latest/)
     - [Flask-Bootstrap — Flask-Bootstrap 3.3.7.1 documentation](https://pythonhosted.org/Flask-Bootstrap/index.html)
-- [ ] 0. Study HTML & CSS (in progress)
-    - [ ] https://www.udemy.com/master-the-basics-of-html5-css3-beginner-web-development/
-- [ ] 1. Solve flask logging that is not working
-- [ ] 2. Make upload_file parts as class
-- [x] 3. Make `.md` file is shown in main page.
+- [ ] 1. Study HTML & CSS (in progress)
+    - [x] https://www.udemy.com/master-the-basics-of-html5-css3-beginner-web-development/
+	- [ ] https://www.udemy.com/html5-fundamentals-for-beginners/ (in progress)
+- [ ] 2. Solve flask logging that is not working
+- [ ] 3. Make upload_file parts as class
 - [ ] 4. Refactoring
-- [ ] 5. Add code coverage 
+- [ ] 5. Add code coverage
 - [ ] 6. Make a list of all `.md` files shown in the main page
 - [ ] 7. Split the layout(There should be a fixed menu navigating tab, and content should be shown in layout) (in progress)
 - [ ] 8. drag & drop upload feature
+
+#### Completed items
 - [x] 9. Update to python3.7
 - [x] 10. Relative import modification  
-
+- [x] 4. Make `.md` file is shown in main page
 
 #### Set up environment 
 
