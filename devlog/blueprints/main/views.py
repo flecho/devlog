@@ -7,7 +7,7 @@
 from flask import Blueprint, render_template, current_app
 import mistune
 
-page = Blueprint('page', __name__,
+main = Blueprint('main', __name__,
                  template_folder='templates')
 
 
@@ -32,9 +32,9 @@ def get_markdown_file():
     return result
 
 
-@page.route("/")
+@main.route("/")
 def home():
     # return "Hello, World!"
     welcome_msg = "Welcome to devlog!"
     markdown_file = get_markdown_file()
-    return render_template('page/home.html', welcome_msg=welcome_msg, markdown_file=markdown_file)
+    return render_template('main/home.html', welcome_msg=welcome_msg, markdown_file=markdown_file)

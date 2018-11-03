@@ -1,9 +1,9 @@
 import os
 from flask import Flask
 from flask_bootstrap import Bootstrap
-from .blueprints.upload import upload
-from .blueprints.page import page
 from .blueprints.about import about
+from .blueprints.main import main
+from .blueprints.upload import upload
 
 
 def create_app(settings_override=None):
@@ -23,9 +23,9 @@ def create_app(settings_override=None):
     if settings_override:
         app.config.update(settings_override)
 
-    app.register_blueprint(upload)
     app.register_blueprint(about)
-    app.register_blueprint(page)
+    app.register_blueprint(upload)
+    app.register_blueprint(main)
 
     upload.path = os.path.join(app.instance_path, 'uploads')
 

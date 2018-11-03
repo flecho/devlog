@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Joonsang Jo's devlog </title>
+<style>
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {    
+    width: 100%;
+    background: #ccc;
+}
+
+article {
+    float: left;
+    width: 100%;
+    background: #333;
+}
+
+/* Style the footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #777;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h2>Joonsang's devlog</h2>
+    </header>
+    <section>
+        <nav>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="#">Posts</a></li>
+        </nav>
+
+    <article>
+        <p> An article's content</p>
+        <!-- Wanna set this menu dynamically by python variables. -->
+        {{ markdown_file|safe }}
+    </article>
+    </section>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+
+</body>
+</html>
+
+
