@@ -1,0 +1,49 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: green;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+    bottom: 0;
+    background-color: #777;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {    
+    width: 100%;
+    background-color: #ccc;
+    display: block;
+    padding:5px
+}
+
+nav ul {
+    list-style-type:none;
+}
+
+nav li {
+    display:inline;
+}
+
+article {
+    float: left;
+    width: 100%;
+    padding: 10%;
+    background-color: #eee;
+    color: black;
+}
+
