@@ -38,6 +38,10 @@ nav li {
     display:inline;
 }
 
+nav li a:hover{
+    background-color: yellowgreen;
+}
+
 article {
     box-sizing: border-box; /* This line keeps the box size as it is regardless of padding */
     float:left;   /* This line was used to fill the gap*/
