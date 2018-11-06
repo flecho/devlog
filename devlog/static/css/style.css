@@ -9,6 +9,9 @@ a:link, a:visited {
 }
 
 header {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: green;
     height: 100px;    
     font-size: 20px;
@@ -17,6 +20,10 @@ header {
 }
 
 nav {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     height: 40px;
     width: 100%;
     background-color: #ccc;
@@ -32,7 +39,9 @@ nav li {
 }
 
 article {
+    box-sizing: border-box; /* This line keeps the box size as it is regardless of padding */
     float:left;   /* This line was used to fill the gap*/
+    padding-left: 20px;    
     padding-bottom: 60px;
     width: 100%;
     background-color: #eee;
