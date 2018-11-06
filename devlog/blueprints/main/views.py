@@ -18,17 +18,17 @@ def get_markdown_files():
 
 def get_markdown_file():
     # If you care about performance, it is better to re-use the Markdown instance
-    import os
-    file_path = os.path.join(current_app.instance_path, 'uploads', 'hello.md')
+    import os    
+    file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'example.md')
     # whether file exists or not.
     if not os.path.isfile(file_path):
-        return "No markdown file yet."
+        return "No markdown file for name {} yet.".format(file_path)
     
     markdown = None
     renderer = mistune.Renderer(escape=True, hard_wrap=True)
     markdown = mistune.Markdown(renderer=renderer)
     with open(file_path, 'rt') as f:
-        result = markdown(f.read().decode('utf-8'))
+        result = markdown(f.read())
     return result
 
 

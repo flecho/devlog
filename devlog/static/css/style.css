@@ -1,5 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 a:link, a:visited {
@@ -7,28 +8,19 @@ a:link, a:visited {
     color: green;
 }
 
-/* Style the header */
 header {
-    background-color: #666;
-    width: 100%;
-    padding: 20px;
+    background-color: green;
+    height: 100px;    
+    font-size: 20px;
     text-align: center;
+    width: 100%;
 }
 
-/* Style the footer */
-footer {
-    bottom: 0;
-    background-color: #777;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {    
+nav {
+    height: 40px;
     width: 100%;
     background-color: #ccc;
     display: block;
-    padding:5px
 }
 
 nav ul {
@@ -40,10 +32,23 @@ nav li {
 }
 
 article {
-    float: left;
+    float:left;   /* This line was used to fill the gap*/
+    padding-bottom: 60px;
     width: 100%;
-    padding: 10%;
     background-color: #eee;
     color: black;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: green;
+    width: 100%;
+    text-align: center;
+}
+
+
 

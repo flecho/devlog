@@ -17,14 +17,14 @@ This blog will record all my personal noteworthy logs in markdown format.
     - [Flask-Bootstrap — Flask-Bootstrap 3.3.7.1 documentation](https://pythonhosted.org/Flask-Bootstrap/index.html)
 - [ ] 1. Study HTML & CSS (in progress)
     - [x] https://www.udemy.com/master-the-basics-of-html5-css3-beginner-web-development/
-	- [ ] https://www.udemy.com/html5-fundamentals-for-beginners/ (in progress: 18/36)
+	- [ ] https://www.udemy.com/html5-fundamentals-for-beginners/ (in progress: 15/36)
 - [ ] 2. Split the layout(There should be a fixed menu navigating tab, and content should be shown in layout) (in progress)
     - [x] Apply simple layout to make all pages have the same layout.
     - [ ] header, footer size alignment
     - [ ] HTML page inheritance --> to make single layout file to be applied to all pages
 - [ ] 3. Make upload_file parts as class
 - [ ] 4. Make a list of all `.md` files shown in the main page
-- [ ] 5. Should make text located in the middle of the tag box.
+
 
 #### Long-term plan
 - [ ] Refactoring
